@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Question 5
+    </title>
+    <style type = "text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+            box-sizing: border-box;
+        }
+        .flexcontainer{
+            width: 100%;
+            height:auto;
+        }
+        .flex-box{
+            width: 200px;
+            height: 50px;
+            background: purple;
+            color: white;
+            font-size: 25px;
+            text-align: top;
+            line-height: 50px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    </style>
+    <body bgcolor="pink">
+        <div class="flex-container">
+            
+            <div class = "flex-box"><p id="test">ADD SCORE: 0</p></div>
+            </div>
+            <div class = "question1">
+        </div>
+        <center>
+        <font size = "5" face = "verdana" color = "#1a1aff">
+        <h1>Which of these animals would you choose as a pet?</h1>
+        </font>
+        </center>
+        <center>
+            <button onclick="counter1()" style = "background-color: #97f7cc; color: #0db46a; font-size: 52px;border-radius: 5px;">&nbsp;A puppy&nbsp;</button>
+        </center>
+        <center>
+            <button onclick="counter2()" style = "background-color: #97f7cc; color: #0db46a; font-size: 52px;margin-top: 30px;border-radius: 5px;">&nbsp;A kitten&nbsp;</button>
+        </center>
+        <center>
+            <button onclick="counter3()" style = "background-color: #97f7cc; color: #0db46a; font-size: 52px; margin-top: 30px; border-radius: 5px;">&nbsp;A panda&nbsp;</button>
+        </center>
+        <center>
+            <button onclick="counter4()" style = "background-color: #97f7cc; color: #0db46a; font-size: 52px; margin-top: 30px;border-radius: 5px;">&nbsp;A turtle&nbsp;</button>
+        </center>
+        <center>
+            <a href = "question6.html">
+            <button style = "background-color: #b366ff; color: #4d0099; font-size: 52px; margin-top: 30px; border-radius: 5px;">&nbsp;Next >&nbsp;</button>
+            </a>
+        </center>
+        </center>
+        <script>
+            function counter1(){
+                document.getElementById("test").innerHTML = "ADD SCORE: 10";
+                count = count + 1;
+            }
+            function counter2(){
+                document.getElementById("test").innerHTML = "ADD SCORE: 20";
+                count = count + 2;
+            }
+            function counter3(){
+                document.getElementById("test").innerHTML = "ADD SCORE: 40";
+                count = count + 3;
+            }
+            function counter4(){
+                document.getElementById("test").innerHTML = "ADD SCORE: 30";
+                count = count + 4;
+            }
+        </script>
+    </body>
+</html>
